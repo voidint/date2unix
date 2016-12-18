@@ -1,0 +1,15 @@
+{
+    "version": "0.0.1",
+    "tool": "go build",
+    "package": "main",
+    "variables": [
+        {
+            "variable": "Date",
+            "value": "{{.date}}"
+        },
+        {
+            "variable": "Commit",
+            "value": "{{.gitCommit}}"
+        }
+    ]
+}

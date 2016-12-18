@@ -17,7 +17,7 @@ const (
 func main() {
 	app := cli.NewApp()
 	app.Name = "date2unix"
-	app.Version = "v0.0.1"
+	app.Version = fmt.Sprintf("0.0.2\ndate: %s\ncommit: %s", Date, Commit)
 	app.Usage = "Convert date string to UNIX timestamp, the number of seconds elapsed since January 1, 1970."
 	app.UsageText = "date2unix [global options] [arguments...]"
 	app.Authors = []cli.Author{
